@@ -1,0 +1,57 @@
+\documentclass{article}
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+\begin{document}
+
+\textbf{\underline{Mathys Ellis requirments notes part 1}}
+
+Create a system for handling marks of students.
+
+\textbf{Intefaces:}
+\begin{itemize}
+\item Lecture Inteface - be able to see and modify marks, export, report
+\item TA Inteface - Be able to upload and modify marks for practicals and tuts
+\item Student Inteface - Be able to see marks and exam entrance
+\end{itemize}
+
+\textbf{Platforms:}
+\begin{itemize}
+\item Website (CS website) - Support all web browsers above IE 6 - Used by Lectures \& Students \& TAs
+\item Android application - api 4.8+ - Used by TAs
+\end{itemize}
+
+\textbf{Database:}
+\begin{itemize}
+\item MySQL
+\item Various levels of granulity - Must support a roll up functions
+\end{itemize}
+
+\textbf{Export/Import:}
+\begin{itemize}
+\item Export to CVS, PDF
+\end{itemize}
+
+\textbf{Technology:}
+\begin{itemize}
+\item LDA - used for account management
+\item Python
+\item Django (server side)
+\item SOAP
+\end{itemize}
+
+\textbf{Security:}
+\begin{itemize}
+\item Account system
+\item Audit trail
+\item Security roles - custimizable roles per user
+\item Auto logout - 50 mins
+\end{itemize}
+\end{document}
