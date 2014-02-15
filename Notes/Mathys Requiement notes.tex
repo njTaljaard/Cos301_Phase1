@@ -17,26 +17,41 @@ Create a system for handling marks of students.
 
 \textbf{Intefaces:}
 \begin{itemize}
-\item Lecture Inteface - be able to see and modify marks, export, report
-\item TA Inteface - Be able to upload and modify marks for practicals and tuts
-\item Student Inteface - Be able to see marks and exam entrance
+\item Lecture Inteface - be able to see and modify marks, export, report - Web
+\item TA Inteface - Be able to upload and modify marks for practicals and tuts - Web, App
+\item Student Inteface - Be able to see marks and exam entrance - Web, App
 \end{itemize}
 
 \textbf{Platforms:}
 \begin{itemize}
 \item Website (CS website) - Support all web browsers above IE 6 - Used by Lectures \& Students \& TAs
-\item Android application - api 4.8+ - Used by TAs
+\item Android application - api 4.8+ - Used by TAs \& Students
 \end{itemize}
 
 \textbf{Database:}
 \begin{itemize}
 \item MySQL
-\item Various levels of granulity - Must support a roll up functions
+\item Various levels of granulity - Must support a roll up functions - Be able to generate raport at each level
+\end{itemize}
+
+\textbf{Integration}
+\begin{itemize}
+\item CS website
+\item CS student database - one way connection - pull student info and booking details
 \end{itemize}
 
 \textbf{Export/Import:}
 \begin{itemize}
-\item Export to CVS, PDF
+\item Export to CSV - For university mark DB
+\item Export to PDF - Graphs, Avg, Median, etc
+\end{itemize}
+
+\textbf{Architecture:}
+\begin{itemize}
+\item MVC
+\item View - app and website
+\item Controller - server with soap inteface
+\item Model - Database
 \end{itemize}
 
 \textbf{Technology:}
@@ -44,14 +59,14 @@ Create a system for handling marks of students.
 \item LDA - used for account management
 \item Python
 \item Django (server side)
-\item SOAP
+\item SOAP - All platforms will communicate via this
 \end{itemize}
 
 \textbf{Security:}
 \begin{itemize}
 \item Account system
-\item Audit trail
-\item Security roles - custimizable roles per user
+\item Audit trail - Accessable by Lecture of a specific course, HOD has root access to all course aduit trails - Stored in single table
+\item Security roles - custimizable roles per user - Student, Marker, Lecturer
 \item Auto logout - 50 mins
 \end{itemize}
 \end{document}
