@@ -92,8 +92,91 @@
 	\vspace{0.2in}
 		
 		\subsection{System features:} %Nico Taljaard
-		\vspace{0.1in}
+		\vspace{0.15in}
 		
+		\hspace{0.2in}\textbf{Subject API}
+		\newline\textbf{(Priority: High, Requirement: FRQ1)}
+		\begin{itemize}
+			\item A subject must be creatable.
+			\item Lectures must be added to subject by users with correct authorization.
+			\item Teaching assistants and tutor able to be added by lectures and be assigned to a practical slot.
+			\item Student information for each assigned practical should be pulled from an existing database so that
+					teaching assistants and tutor can access it to be marked.
+		\end{itemize}
+		
+		\vspace{0.15in}
+		
+		\textbf{Lecturer API}
+		\textbf{(Priority: High, Requirement: FRQ2)}
+		\begin{itemize}
+			\item A task must be creatable for the following:
+					\begin{itemize}
+						\item Practicals
+						\item Assignments
+						\item Class tests
+						\item Tests
+					\end{itemize}
+			\item Tasks should also contain the following information:
+					\begin{itemize}
+						\item Starting time to open access.
+						\item End time if a specified time is required, else manual locking is required by lecture.
+						\item A rubric must be added to show the mark allocation.
+					\end{itemize}
+			\item Adjust mark weight allocations.
+			\item Assign security roles to teaching assistants and tutors.
+			\item Move students to a different teaching assistant or tutor.
+			\item Use the reporting API.
+		\end{itemize}
+		
+		\vspace{0.15in}
+		
+		\textbf{Auditing API}
+		\textbf{(Priority: High, Requirement: FRQ3)}
+		\begin{itemize}
+			\item Log file for following activities:
+					\begin{itemize}
+					 	\item Marks added by whom and when.
+					 	\item Marks changed or removed by who, when and what is the reason.
+					\end{itemize}
+			\item Lectures alone should be able to change marks of his own subjects.
+			\item Lectures view own subjects audit logs.
+			\item Head of Department alone should assign a user that can view the entire change log.
+			\item No edits to the audit log allowed.
+		\end{itemize}
+		
+		\vspace{0.15in}
+		
+		\textbf{Marking API}
+		\textbf{(Priority: High, Requirement: FRQ4)}
+		\begin{itemize}
+			\item Accessible through mobile application for tutor.
+			\item Display all available assessment option for teaching assistants or tutor to mark.
+			\item Within assessment display all students registered for current session with a search option.
+			\item Search should be available by student number, surname or name. Displaying results containing all three results.
+			\item In the selected student the marking rubric should be displayed with type able fields.
+			\item Marks should be submitted to the database directly after mark has been finalized for a student.
+		\end{itemize}
+		
+		\vspace{0.15in}
+		
+		\textbf{Reports API}
+		\textbf{(Priority: Medium-High, Requirement: FRQ5)}
+		\begin{itemize}
+			\item Marks can be exported in a .CSV file containing the selected marks for each student.
+			\item All report should be based on a select set of marks.
+			\item Numeric statistics can be exported about marks.
+			\item Graphical reports should be exported to .pdf file.
+		\end{itemize}
+		
+		\vspace{0.2in}
+		
+		\textbf{Student API}
+		\textbf{(Priority: Medium, Requirement: FRQ6)}
+		\begin{itemize}
+			\item Accessible through mobile application or web interface.
+			\item Landing page displays all subjects of current student.
+			\item Subject marks should be viewable for separate assessments as well as a progress mark.
+		\end{itemize}
 		
 	\vspace{0.2in}
 	
