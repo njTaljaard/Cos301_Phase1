@@ -249,6 +249,36 @@
 	
 		\subsection{Non-function requirements:}
 		\vspace{0.1in}
+		
+		\bgein{itemize}
+			\item Authentication
+				\bgein{itemize}
+					\item All users first have to login
+				\end{itemize}
+			\item Audit-ability
+				\bgein{itemize}
+					\item All actions by all users will be added in the audit trails
+					\item Audit trails will include:
+					\begin{itemize}
+						\item Login/logout of users
+						\item Modifications of data
+					\end{itemize}
+				\end{itemize}
+			\item Scalability
+				\bgein{itemize}
+					\item Should be able to handle multiple running practicals symotanously
+					\item Performance should not be dependent on the amount of active users
+				\end{itemize}
+			\item Availability
+				\textbf{There will be a 3 levels of previleges:students,markers,lecturers}
+				\bgein{itemize}
+					\item Students will only be able to view marks
+					\item Uploading of practicle marks by markers should only be availible when the practicle starts until a time specified by the lecturers
+					\item Editing marks will only be availible for lecturers
+					\item Audit trails can only be viewed by lecturers
+					\item Audit trails cannot be modified by anyone
+				\end{itemize}
+		\end{itemize}
 				
 		\subsection{Technical specification:} % Mbulungo Musetsho
 		\vspace{0.1in}
