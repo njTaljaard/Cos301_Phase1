@@ -1,0 +1,198 @@
+\documentclass[12pt]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{pdfpages}
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+\newcommand{\Title}{Requirement Specification} % Assignment title
+\newcommand{\Class}{Cos\ 301} % Course/class
+
+\begin{document}
+
+\vspace{4em}
+
+\begin{center}%
+
+  \LARGE \bf \Title
+  \LARGE {\bf Group 2}\\[2em]
+  \LARGE {\bf Group Members:}\\[1em]
+  \large
+      Nico Taljaard			(10153285)\\[6em]
+      
+      {\bf Version 1.0}
+    
+\end{center}%
+
+\newpage
+	{\LARGE \bf Change Log}\\[2em]
+	
+	\begin{tabbing}
+		\hspace*{3cm}\=\hspace*{3cm}\=\hspace*{8cm}\=\hspace*{3cm} \kill
+		10/02/2014 \> Version 1.0 \> Document Created \> Nico Taljaard\\
+		17/02/2014 \> Version 1.1 \> Edited Formatting \> Nico Taljaard\\
+	\end{tabbing}
+
+\newpage
+	\tableofcontents	
+	
+\newpage
+	\section{Introduction}
+	
+	\vspace{0.2in}
+
+		\subsection{Purpose:} %Mathys Ellis
+		\vspace{0.1in}
+		
+	
+	\vspace{0.2in}
+	
+		\subsection{Document Conventions:} %Nico Taljaard
+		\vspace{0.1in}
+		
+	
+	\vspace{0.2in}
+	
+		\subsection{Project Scope:}
+		\vspace{0.1in}
+		
+		
+	
+	\vspace{0.2in}
+	
+		\subsection{References:}
+		\vspace{0.1in}
+			
+	
+	\vspace{0.5in}
+	
+	\section{System Description:} %Mathys Ellis
+	\vspace{0.2in}
+	
+	
+	
+	\vspace{0.5in}
+	
+	\newpage
+	\section{Functional Requirements:}
+	\vspace{0.2in}
+		
+		\subsection{System features:} %Nico Taljaard
+		\vspace{0.1in}
+		
+		
+	\vspace{0.2in}
+	
+		\subsection{Use Cases:} %Mathys Ellis
+		\vspace{0.1in}
+			%\begin{figure}[htbp] %how to add a picture
+			%	\centering
+			%	\includegraphics[width=\textwidth]{./Project_Use_Case_Diagram}
+			%\end{figure}
+		
+		
+		
+	\vspace{0.2in}
+	
+		\subsection{Entity Relationship Diagrams:}
+		\vspace{0.2in}
+		
+
+		\vspace{0.1in}
+
+			\begin{center}
+			\textbf{Key Based Diagram}
+			\end{center}
+		
+		\vspace{0.3in}
+		
+		
+		\begin{center}
+			\textbf{Fully Attributed Diagram}
+			\end{center}
+		
+		\vspace{0.3in}
+		
+		
+
+		
+	\vspace{0.1in}
+	
+		\subsection{Data Dictionary:}
+		\vspace{0.1in}
+		
+		
+	\vspace{0.5in}
+	
+	\section{External Interface Requirements:}
+	\vspace{0.2in}
+	
+	The system has many internal and external communication 
+	sub-systems which has to interconnect. 
+	\\
+	The system has to interface with the following external mediums:
+	\begin{tabular}
+	\item Internal API for Android systems. Andriod API version 15 (Ice Cream Sandwich). 
+	\item   External API for data transfer between iterconnecting systems. 
+			This API uses SOAP transfer the data.
+	\item	All API's should be able to represent their data from SOAP to:
+				\begin{itemize}
+					\item XML for interfacing with webservers.
+					\item Output marks to CSV format.					
+				\end{itemize} 
+	\item	The API 
+
+
+	
+	\vspace{0.5in}
+	
+	\section{Technical Requirements/Non-Functional}
+	\vspace{0.2in}
+	
+		\subsection{Non-function requirements:}
+		\vspace{0.1in}
+				
+		\subsection{Technical specification:}
+		\vspace{0.1in}
+
+				
+	
+	\vspace{0.5in}
+	
+	\newpage
+	\section{Requirement Matrices:}
+	\vspace{0.2in}
+	
+	
+	
+	\vspace{0.5in}
+	
+	\section{Open Issues:}
+	\vspace{0.2in}
+	
+	
+	
+	\vspace{0.5in}
+	
+	\section{Glossary:}
+	\vspace{0.2in}
+	\item SOAP - Simple Object Access Protocol	
+	\item API - Application programming interface
+	\vspace{0.5in}
+		
+
+\end{document}
