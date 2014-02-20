@@ -33,7 +33,7 @@
   \LARGE {\bf Group Members:}\\[1em]
   \large
       Nico Taljaard			(10153285)\\[6em]
-      
+      Abraham Daniel Pretorius        (12022404)\\[6em]
       {\bf Version 1.0}
     
 \end{center}%
@@ -45,6 +45,7 @@
 		\hspace*{3cm}\=\hspace*{3cm}\=\hspace*{8cm}\=\hspace*{3cm} \kill
 		10/02/2014 \> Version 1.0 \> Document Created \> Nico Taljaard\\
 		17/02/2014 \> Version 1.1 \> Edited Formatting \> Nico Taljaard\\
+		20/02/2014 \> Version 1.2 \> External Interface Requirements \> Abraham Daniel Pretorius  \\
 	\end{tabbing}
 
 \newpage
@@ -252,7 +253,21 @@
 	\section{External Interface Requirements:}
 	\vspace{0.2in}
 	
-	
+	The system has many internal and external communication 
+	sub-systems which has to interconnect. 
+	\\
+	The system has to interface with the following external mediums:
+	\begin{enumerate}
+	\item Internal API for Android systems. Andriod API version 15 (Ice Cream Sandwich). 
+	\item   External API for data transfer between iterconnecting systems. 
+			This API uses SOAP transfer the data.
+	\item	All API's should be able to represent their data from SOAP to:
+				\begin{itemize}
+					\item XML for interfacing with webservers.
+					\item Output marks to CSV format.					
+				\end{itemize} 
+					
+	\end{enumerate}
 	
 	\vspace{0.5in}
 	
