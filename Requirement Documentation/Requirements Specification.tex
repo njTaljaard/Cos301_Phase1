@@ -24,67 +24,106 @@
 
 \begin{document}
 
-\vspace{4em}
-
-\begin{center}%
-
-  \LARGE \bf \Title
-  \LARGE {\bf Group 2}\\[2em]
-  \LARGE {\bf Group Members:}\\[1em]
-  \large
-      Nico Taljaard			(10153285)\\[6em]
-      Abraham Daniel Pretorius        (12022404)\\[6em]
-      {\bf Version 1.0}
-    
-\end{center}%
-
-\newpage
-	{\LARGE \bf Change Log}\\[2em]
+	\vspace{4em}
 	
-	\begin{tabbing}
-		\hspace*{3cm}\=\hspace*{3cm}\=\hspace*{8cm}\=\hspace*{3cm} \kill
-		10/02/2014 \> Version 1.0 \> Document Created \> Nico Taljaard\\
-		17/02/2014 \> Version 1.1 \> Edited Formatting \> Nico Taljaard\\
-		20/02/2014 \> Version 1.2 \> External Interface Requirements \> Abraham Daniel Pretorius  \\
-	\end{tabbing}
-
-\newpage
-	\tableofcontents	
+	\begin{center}%
 	
-\newpage
+	  \LARGE \bf \Title \\[4em]
+	  \LARGE {\bf Group 2}\\[1em]
+	  \LARGE {\bf Group Members:}\\[2em]
+	  \large
+	     Nico Taljaard					(10153285) \\[1em]
+	     Abraham Daniel Pretorius		(12022404) \\[1em]
+	     Mathys Ellis					(12019837) \\[1em]
+	     Nbulungo Musetsho				(10176382) \\[1em]
+	     Verushka Moodley				(29117454) \\[1em]
+	     Eduan Bekker					(12214834) \\[8em]
+	     {\bf Version 2.0}
+	    
+	\end{center}%
+	
+	\newpage
+		{\LARGE \bf Change Log}\\[2em]
+		
+		\begin{tabbing}
+			\hspace*{2.5cm}\=\hspace*{2.5cm}\=\hspace*{8cm}\=\hspace*{3cm} \kill
+			10/02/2014 \> Version 1.0 \> Document Created \> Nico Taljaard \\
+			15/02/2014 \> Version 1.0 \> System Description \> Mathys Ellis \\
+			17/02/2014 \> Version 1.1 \> Edited Formatting \> Nico Taljaard \\
+			17/02/2014 \> Version 1.1 \> Technical Specification \> Nbulungo Musetsho \\
+			17/02/2014 \> Version 1.1 \> Created Non-functional Requirements \> Eduan Bekker \\
+			18/02/2014 \> Version 1.2 \> External Interface Requirements \> Abraham Daniel Pretorius  \\
+			18/02/2014 \> Version 1.2 \> Functional Requirement \> Nico Taljaard \\
+			18/02/2014 \> Version 1.2 \> Updated Non-functional Requirements \> Eduan Bekker \\
+			18/02/2014 \> Version 1.2 \> Updated External Interface Requirements \> Abraham Daniel Pretorius  \\
+			18/02/2014 \> Version 1.2 \> Updated System Description \> Mathys Ellis \\
+			20/02/2014 \> Version 1.3 \> Fixed Compile Errors \> Nico Taljaard \\
+			20/02/2014 \> Version 1.2 \> Updated External Interface Requirements \> Abraham Daniel Pretorius  \\
+			21/02/2014 \> Version 1.2 \> Fixed Spelling \> Nico Taljaard \\
+			21/02/2014 \> Version 2.0 \> Change formatting \> Nico Taljaard \\
+		\end{tabbing}
+	
+	\newpage
+		\tableofcontents	
+		
+	\newpage
 	\section{Introduction}
 	
 	\vspace{0.2in}
 
-		\subsection{Purpose:} %Verushka Moodley
+		\subsection{Purpose:}
 		\vspace{0.1in}
 		The purpose of this document is to communicate the requirements and proposed solution to the client, Mr Jan Kroeze, who requires a computer system for marking purposes. This document will outline the scope of the project and thus serve as a formal agreement and contract between the developers and the client. It will also serve as a reference and eliminate any confusion that may occur in the later stages of development. 
 	
 	\vspace{0.2in}
 	
-		\subsection{Document Conventions:} %Nico Taljaard
+		\subsection{Document Conventions:}
 		\vspace{0.1in}
-		Documentation formulation: LaTeX
+		\begin{itemize}
+			\item Documentation formulation: LaTeX
+			\item ERD Crow-Foot notation
+			\item UML 2.0
+		\end{itemize}
 	
 	\vspace{0.2in}
 	
-		\subsection{Project Scope:} %Verushka Moodley
+		\subsection{Project Scope:}
 		\vspace{0.1in}
-		The required computer system should aid the teaching assistants and lecturers in the University of Pretoria to mark assessments of students and the maintenance of marks thereafter. It should also allow students to keep up to date with their marks.
+		
+		The required computer system should aid the teaching assistants and lecturers in the University of Pretoria to mark assessments of students and the maintenance of marks thereafter. It should also allow students to keep up to date with their marks. 
+		
+		\vspace{0.5cm}
+		
+		\begin{flushleft}
 		The solution will consist of an application that students, teaching assistants and lecturers will use in the following way:
-		•	Teaching assistants will receive mark sheets of registered students and will be allowed to assign practical marks to the students via the app. Lecturers will also be granted these permissions.
-		•	Students will be able to view a list of their marks via the application
+		\end{flushleft}
+			\begin{itemize}
+				\item Teaching assistants will receive mark sheets of registered students and will be allowed to assign practical marks to the students via the app. Lecturers will also be granted these permissions.
+				\item Students will be able to view a list of their marks via the application
+			\end{itemize}
+			
+		\vspace{0.5cm}
+		
+		\begin{flushleft}	
 		The solution will also consist of a web interface that will allow the following:
-		•	Lecturers can maintain and integrate marks
-		•	Lecturers can request reports with a certain criteria. A graph of some nature or statistics will then be presented 
-		•	An audit log will be updated automatically 
+		\end{flushleft}
+			\begin{itemize}
+				\item Lecturers can maintain and integrate marks
+				\item Lecturers can request reports with a certain criteria. A graph of some nature or statistics will then be presented 
+				\item An audit log will be updated automatically 
+			\end{itemize} 
+			
+		\vspace{0.5cm}
+			
+		\begin{flushleft}		
 		The solution has the following restrictions:
-		•	Users must be registered- a username and password is required for access to the system
-		•	Marking sheets may only be locked/unlocked by lecturers that are assigned to the module. Teaching assistants will be allowed to update marks according to the status of the mark sheet. Students may only view their mark when the mark sheet is locked.
-		•	No one may be allowed to edit the audit log. Only lecturers have permission to view the audit log.
-		
-		
-	
+		\end{flushleft}
+			\begin{itemize}
+				\item Users must be registered- a username and password is required for access to the system
+				\item Marking sheets may only be locked/unlocked by lecturers that are assigned to the module. Teaching assistants will be allowed to update marks according to the status of the mark sheet. Students may only view their mark when the mark sheet is locked.
+				\item No one may be allowed to edit the audit log. Only lecturers have permission to view the audit log.
+			\end{itemize}		
+
 	\vspace{0.2in}
 	
 		\subsection{References:}
@@ -93,34 +132,37 @@
 	
 	\vspace{0.5in}
 	
-	\section{System Description:} %Mathys Ellis
+	\section{System Description:}
 	\vspace{0.2in}
 	
-	The goal of the system is to provide the client with a secure, scalable and remotely accessable marking and mark management system. The system is comprised of four different facets which are listed below. It is intended to replace the current marking and mark management system employed by the client, which is currently paper and spreadsheet based.
+	The goal of the system is to provide the client with a secure, scalable and remotely accessible marking and mark management system. The system is comprised of four different facets which are listed below. It is intended to replace the current marking and mark management system employed by the client, which is currently paper and spreadsheet based.
 	
+	\vspace{0.5cm}
 	\textbf{Student mark retrieval facet:}
 	\vspace{0.1in}
 	The goal of this facet is to provide the "Students" with a secure and private  means to a read-only view of their marks, for the markable items of a specified course on the system. The means by which they will view the markable items will be in the form of a website interface and android application.
 	
+	\vspace{0.5cm}
 	\textbf{Marker marking tool facet:}
 	\vspace{0.1in}
 	The goal of this facet is to provide "Markers", assigned to a particular course, with a mobile tool to allow then to be able to add and update the mark of a specified student on the mark list for a particular markable item of the particular course. The tool will allow "Markers" access to the mark list from any location where an internet connection is present. The tool will be in the forms of a website interface and android application.   	
 	
+	\vspace{0.5cm}
 	\textbf{Lecturer mark management facet:}
 	\vspace{0.1in}
 	The goal of this facet is to provide "Lectures", assigned to a particular course, with a means to manage the marks of each student assigned to the course. Where the term manage comprises of adding, modifying and removing markable items, mark lists and the individual marks of students. Further the facet also has the goal of providing a means to report on mark related data on different levels of granularity of a particular course.  
 	
+	\vspace{0.5cm}
 	\textbf{Audit trail facet:}
 	\vspace{0.1in}
-	The goal of this facet is to give the system the ability to track all critical actions that occur on the system independent of any user interference and also provide a read-only view of such trails for authorised users of the system. Where critical actions comprise of adding, updating and removing any data on the database aswell as login and logout actions.  
+	The goal of this facet is to give the system the ability to track all critical actions that occur on the system independent of any user interference and also provide a read-only view of such trails for authorised users of the system. Where critical actions comprise of adding, updating and removing any data on the database as well as login and logout actions.  
 	
 	\vspace{0.5in}
 	
-	\newpage
 	\section{Functional Requirements:}
 	\vspace{0.2in}
 		
-		\subsection{System features:} %Nico Taljaard
+		\subsection{System features:}
 		\vspace{0.15in}
 		
 		\hspace{0.2in}\textbf{Subject API}
@@ -216,8 +258,6 @@
 			%	\includegraphics[width=\textwidth]{./Project_Use_Case_Diagram}
 			%\end{figure}
 		
-		
-		
 	\vspace{0.2in}
 	
 		\subsection{Entity Relationship Diagrams:}
@@ -239,14 +279,10 @@
 		
 		\vspace{0.3in}
 		
-		
-
-		
 	\vspace{0.1in}
 	
 		\subsection{Data Dictionary:}
 		\vspace{0.1in}
-		
 		
 	\vspace{0.5in}
 	
@@ -258,15 +294,14 @@
 	\\
 	The system has to interface with the following external mediums:
 	\begin{enumerate}
-	\item Internal API for Android systems. Andriod API version 15 (Ice Cream Sandwich). 
-	\item   External API for data transfer between iterconnecting systems. 
+	\item Internal API for Android systems. Android API version 15 (Ice Cream Sandwich). 
+	\item   External API for data transfer between interconnecting systems. 
 			This API uses SOAP transfer the data.
 	\item	All API's should be able to represent their data from SOAP to:
 				\begin{itemize}
-					\item XML for interfacing with webservers.
-					\item Output marks to CSV format.					
+					\item XML for interfacing with web servers.
+					\item Output marks to .CSV format.					
 				\end{itemize} 
-					
 	\end{enumerate}
 	
 	\vspace{0.5in}
@@ -293,15 +328,15 @@
 				\end{itemize}
 			\item Scalability
 				\begin{itemize}
-					\item Should be able to handle multiple running practicals symotanously
+					\item Should be able to handle multiple running practicals simultaneously
 					\item Performance should not be dependent on the amount of active users
 				\end{itemize}
 			\item Availability
-				\textbf{There will be a 3 levels of previleges:students,markersa and lecturers}
+				\textbf{There will be a 3 levels of privileges:students, markers and lecturers}
 				\begin{itemize}
 					\item Students will only be able to view marks
-					\item Uploading of practicle marks by markers should only be availible when the practicle starts until a time specified by the lecturers
-					\item Editing marks will only be availible for lecturers
+					\item Uploading of practical marks by markers should only be available when the practical starts until a time specified by the lecturers
+					\item Editing marks will only be available for lecturers
 					\item Audit trails can only be viewed by lecturers
 					\item Audit trails cannot be modified by anyone
 				\end{itemize}
@@ -343,7 +378,7 @@
 	
 	\begin{itemize}
 		\item Theft/loss of mobile devices
-		\item User errors like typos
+		\item User errors like typing errors
 	\end{itemize}
 	
 	
