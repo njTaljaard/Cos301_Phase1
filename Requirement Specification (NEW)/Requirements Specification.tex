@@ -65,6 +65,7 @@
 			23/02/2014 \> Version 2.0 \> Checked spelling and grammar \> Mathys Ellis \\
 			24/02/2014 \> Version 3.0 \> Changed to new layout specification \> Nico Taljaard \\
 			24/02/2014 \> Version 3.0 \> Required Functionality \> Nico Taljaard \\	
+			24/02/2014 \> Version 3.0 \> Quality requirements \> Eduan Bekker \\
 		\end{tabbing}
 
 	\newpage
@@ -100,7 +101,35 @@
 		\subsection{Quality requirements}
 		
 			\vspace{0.2in}
-			
+			\begin{itemize}
+					\item Authentication
+						\begin{itemize}
+							\item All users have to login before they are able to access the system
+						\end{itemize}
+					\item Audit-ability
+						\begin{itemize}
+							\item All the actions of all the users will be added to the audit trail log
+							\item The events consider as audit trails will include:
+							\begin{itemize}
+								\item The login and logout of users
+								\item The modifications of any data
+							\end{itemize}
+						\end{itemize}
+					\item Scalability
+						\begin{itemize}
+							\item The system should be able to handle multiple running practicals simultaneously
+							\item The performance of the system should not be dependent on the number of active users
+						\end{itemize}
+					\item Availability
+						\textbf{There will be 3 levels of privileges: students, markers and lecturers}
+						\begin{itemize}
+							\item Students will only be able to view marks
+							\item Uploading of practical marks by markers should only be available when the practical starts until a time specified by the lecturers
+							\item Editing marks will only be available for lecturers
+							\item Audit trails can only be viewed by lecturers
+							\item Audit trails cannot be modified by anyone
+						\end{itemize}
+				\end{itemize}
 			
 		
 		\subsection{Integration requirements}
