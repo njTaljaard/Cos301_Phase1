@@ -66,6 +66,7 @@
 			24/02/2014 \> Version 3.0 \> Changed to new layout specification \> Nico Taljaard \\
 			24/02/2014 \> Version 3.0 \> Required Functionality \> Nico Taljaard \\	
 			24/02/2014 \> Version 3.0 \> Quality requirements \> Eduan Bekker \\
+			24/02/2014 \> Version 3.0 \> Integration Requirements: Protocols, API specifications  \> Abraham Daniel Pretorius \\	
 		\end{tabbing}
 
 	\newpage
@@ -135,6 +136,46 @@
 		\subsection{Integration requirements}
 		
 			\vspace{0.2in}
+
+		\begin{flushleft}
+				\textbf{Protocols}
+				\newline\textbf{(Priority: High, Requirement: ARQIRQ3)} 
+		\end{flushleft}
+			
+			\vspace{0.05in} 
+			
+			\begin{enumerate}
+				\item SOAP (Simple Object Access Protocol) will be used to transfer 
+				structured information over the network (namely the Internet). 
+			\end{enumerate}	
+			
+			\vspace{0.15in}
+			
+		
+\begin{flushleft}
+				\textbf{API specifications}
+				\newline\textbf{(Priority: High, Requirement: ARQIRQ3)}
+\end{flushleft}		
+		\vspace{0.05in} 
+		
+		The system has to interface with the following external mediums:
+	\begin{enumerate}
+		\item Internal API for Android systems. Android API version 15 (Ice Cream Sandwich). 
+		\item External API for data transfer between interconnecting systems. This API uses SOAP 				transfer the data.
+	\end{enumerate}
+	\vspace{0.05in} 
+	
+	All API's should represent their data from SOAP to:
+	\begin{enumerate}
+					\item XML for interfacing with web servers using WSDL.
+					\item Output marks to .CSV format.					
+	\end{enumerate}
+		
+		\vspace{0.15in}
+			
+
+	
+			\vspace{0.2in}			
 			
 			
 		
@@ -142,6 +183,12 @@
 	
 		\vspace{0.2in}
 		
+		\begin{flushleft}
+				\textbf{Technologies which MUST be used}
+				\newline\textbf{(Priority: High, Requirement: ARQ1)}
+		\end{flushleft}
+			
+			\vspace{0.05in}
 		
 	
 	\section{Functional requirements}
@@ -331,7 +378,8 @@
 	\section{Glossary}
 	
 		\vspace{0.2in}
-		
+	SOAP - Simple Object Access Protocol	
+	WSDL - Web Service Definition Language	
 	
 	
 \end{document}
