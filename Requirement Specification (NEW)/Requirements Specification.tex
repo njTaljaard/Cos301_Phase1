@@ -77,16 +77,40 @@
 	
 		\vspace{0.2in}
 	
+				 This document is the software requirements specification for a computerised marking system to be used by the University of Pretoria. It begins by addressing the purpose and vision of the project then continues with a general discussion on the background of the project. Thereafter, the architectural requirements are identified with a main focus on the access channel requirements, quality requirements, integration requirements, and architectural constraints. The function requirements follow by discussing the application functionality required by the users of the system.  In this section of the document, many diagrams are used to depict the flow of communication and interaction between the users and the system. It will also illustrate the processes that the system will need to complete and the states that the system will undergo.  The next topic will communicate the open issues on some of the requirements, and the document concludes with a glossary of possibly unfamiliar terms used in this document.
+		
+		 
+	
 	\section{Vision}
 	
 		\vspace{0.2in}
 		
+			 		 The purpose of this document is to communicate the requirements and proposed solution to the client, Mr Jan Kroeze, who requires a computer system for marking purposes. This document will outline the scope of the project and thus serve as a formal agreement and contract between the developers and the client. It will also serve as a reference and eliminate any confusion that may occur in the later stages of development.
+				
 		
 	
 	\section{Background}
 	
 		\vspace{0.2in}
-		
+		 The University of Pretoria currently has a manual paper based marking system which has many flaws (losing marks is one of the major issues). Our solution aims to assist them by providing a computerised system. The required computer system should aid the teaching assistants and lecturers in the university in recording the marks of assessments for students, and the maintenance of marks thereafter. It should also allow students to keep up to date with their marks. 
+			The solution will consist of an application that students, teaching assistants and lecturers will use in the following way:
+			\begin{itemize}
+						\item Teaching assistants will receive mark sheets of registered students and will be allowed to assign practical marks to the students via the app. Lecturers will also be granted these permissions.
+						\item Students will be able to view a list of their marks via the application
+			\end{itemize}			
+			The solution will also consist of a web interface that will allow the following:
+			\begin{itemize}
+						\item Lecturers can maintain and integrate marks
+						\item Lecturers can request reports with a certain criteria. A graph of some nature or statistics will then be presented 
+						\item An audit log will be updated automatically 
+			\end{itemize}
+			The solution has the following restrictions:
+			\begin{itemize}
+						\item Users must be registered- a username and password is required for access to the system
+						\item Marking sheets may only be locked/unlocked by lecturers that are assigned to the module. Teaching assistants will be allowed to update marks according to the status of the mark sheet. Students may only view their mark when the mark sheet is locked. 
+						\item No one may be allowed to edit the audit log. Only lecturers have permission to view the audit log. 
+			\end{itemize}
+			
 		
 	
 	\section{Architecture requirements}
