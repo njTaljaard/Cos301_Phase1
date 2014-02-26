@@ -68,6 +68,10 @@
 			24/02/2014 \> Version 3.0 \> Required Functionality \> Nico Taljaard \\	
 			24/02/2014 \> Version 3.0 \> Quality requirements \> Eduan Bekker \\
 			24/02/2014 \> Version 3.0 \> Integration Requirements: Protocols, API specifications  \> Abraham Daniel Pretorius \\	
+			26/02/2014 \> Version 3.0 \> Integration Requirements: Integration channel to be used:, \\
+			Protocols, API specifications, \\ 
+			Quality requirements for integration,
+			  \> Abraham Daniel Pretorius \\
 		\end{tabbing}
 
 	\newpage
@@ -178,9 +182,26 @@
 		
 			\vspace{0.2in}
 
+
+		\begin{flushleft}
+				\textbf{Integration channel to be used:}
+				\newline\textbf{(Priority: High, Requirement: ARQIRQ1)} 
+		\end{flushleft}
+			
+			\vspace{0.05in} 
+			\begin{itemize} 
+				\item SOAP (Simple Object Access Protocol) will be used as an interface\
+				 between different mediums and platforms to interact with the system.
+			\end{itemize} 
+			
+			\vspace{0.15in}
+
+
+
+
 		\begin{flushleft}
 				\textbf{Protocols}
-				\newline\textbf{(Priority: High, Requirement: ARQIRQ3)} 
+				\newline\textbf{(Priority: High, Requirement: ARQIRQ2)} 
 		\end{flushleft}
 			
 			\vspace{0.05in} 
@@ -216,10 +237,66 @@
 			
 
 	
+\begin{flushleft}
+				\textbf{Quality requirements for integration}
+				\newline\textbf{(Priority: High, Requirement: ARQIRQ4)}
+\end{flushleft}		
+
+		
+		\vspace{0.05in}
+			
+	\begin{enumerate}
+	  \item Performance:		
+		\begin{itemize} 
+		 \item People viewing the marks should not need to wait extensively, //
+		 		however the system can only be as fast as the connection to it.//
+		 		Therefor the system cannot be expected to be faster than the connection\\
+		 		that is being used.
+		 \item Documentation drawn up from the marks may take between  \\
+			   10 - 30 seconds to be compiled.
+		 \item Markers should be able to update marks within 10 seconds of each other.
+		\end{itemize}	
+
+		\item Scalability:		
+			\begin{itemize}
+			\item The system will be designed with design patterns. These are used so that\\
+			the it is easy to upgrade the different aspects independently. \\   
+			\end{itemize}
+
+	\item Reliability:		
+			\begin{itemize}
+			\item A software issue should not arise, but if it does the application \\
+			must handle the problem and send an appropriate error message to the user. \\
+			If data has failed to send the application must reattempt to upload the data \\
+			for a specified amount of time (1 minute) or until such a time that the user \\
+			aborts data transfer.
+			
+			\end{itemize}
+			
+			
+	\item Security:		
+			\begin{itemize}
+			\item No user, who is unauthorized, may gain access to the system.
+			\item Authorized users can only access the aspects of the system as \\
+			allocated to them by the administrator.
+			\item Security questions, as well as email addresses will be linked to each\\
+				of the users. This will be used for password recovery.
+			\end{itemize}
+			
+			
+	\item Auditability:		
+			\begin{itemize}
+			\item Each time marks are changed it will be recorded in an audit trail which not\\
+			even the system administrator would be able to edit.
+			\end{itemize}
+			
+\end{enumerate}			
+		
+	
 			\vspace{0.2in}			
 			
 			
-		
+				
 		\subsection{Architecture constraints}
 	
 		\vspace{0.2in}
